@@ -1,0 +1,93 @@
+/* style.css */
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    width: 200px; /* Adjust the width of the sidebar */
+    background-color: #f0f0f0; /* Sidebar background color */
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px 0;
+}
+
+#sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#data-container {
+    margin-top: 20px;
+}
+
+.row {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: #f0f0f0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
